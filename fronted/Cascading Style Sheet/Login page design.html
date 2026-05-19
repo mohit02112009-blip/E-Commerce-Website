@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page Designm | Using HTML and CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-color: aqua;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .Login_page{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 400px;
+        padding: 50px;
+        width: 400px;
+        height: 500px;
+        border-radius: 10px;
+    }
+    .box_input input{
+        margin: 10px 0px;
+        padding: 13px;
+        width: 90%;
+        font-family: "Montserrat", sans-serif;
+    }
+    .login_btn{
+        width: 80%;
+        background-color: darkblue;
+        color: white;
+        padding: 13px;
+        border: none;
+        border-radius: 50px;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .btn_butto{
+       text-align: center;
+       margin: 20px 0px;
+    }
+    .social_links{
+        text-align: center;
+    }
+    .social_links li{
+        border: 1px solid rgb(196, 196, 196);
+        margin: 20px 0px;
+        list-style: none;
+        padding: 10px 0px;
+        border-radius: 50px;
+    }
+    .social_links li a{
+        color:black;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+<div class="Login_page">
+<h1>Login page</h1>
+<!-- <hr style="width: 30%;"> -->
+<div class="Login_box">
+<form action="">
+<div class="box_input">
+<label for="username">Username & Email id</label>
+<br>
+
+<input type="text" placeholder="Enter username & Email id">
+</div>
+<div class="box_input">
+<label for="username">Password</label>
+<br>
+<input type="text" placeholder="Enter Your password (6Digit)">
+</div>
+<input type="checkbox">
+<span>I agree with terms & Conditions</span>
+<br>
+<div class="btn_butto">
+<button type="submit" class="login_btn">Login</button>
+</div>
+</form>
+<div class="social_links">
+<li> <a href=""> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAACUCAMAAACp1UvlAAABKVBMVEX////qQzU0qFNChfT7vAU7gvShv/lHifXW5P37uQCwx/otfPTqPi/qQTPqOyswp1AlpEnpNybpMB02f/Tx9f798O/+9vXrTUD4yMX80Hb85eP50s/3wr7sW1Hub2b1rqnP6NXn9Orw+PJSs2vveXH73tzylY/tZVv1qKP1tLHxi4T/+uzsVC/pOzf//ff80Gf1kxn+8dT92ob8y1P7wS/+7by4z/v94J3+6sb94af8yT2OtPj80l792Xp5pvf925Bunfbj7P2IyJec0ql3wYiz3b3C48noJgzwcAz3nxTtWybygiL4qQ/wcibxfEBRkPXluAmLtlLYtxdaq0insjGVsTTCtSZ3rUFkuXk0l6A5nY0+id4uomY7i9M5law1mpg9kr45oX86jsh/OD03AAAHdElEQVR4nO2aaXfTRhSGZdlOItCeyDbxbslrSsoSSEkgJN7SFtpQCK2BlAL//0d0JDu2pVk08owsf8j7ISeHY4vH933nztxxBOFOd9p45Sxr35OVSxplJqtQbfWcSrtczgOVyxWn1+qU9pPDy1nFbqsiX5qGoaqyLCuewC+qapiXZrnXLSRAt19qVfKASEmhpciGmWo73eIa0XLNjpMyVRnHtGBTDaPdKlrrwSo5edUIY5qzqWq+Ut2PHarZUYF5tFS3lqpOMV6qlmFGYrpFM0ynEBtVsWdS+wdJNSulWNZAs5VancqtmSr3mtyprGqeiWpKpnQ4r4BCW5YZqaZkbZ4xs3rhzYoSTFZ73NpZsbzSIsSQmWU+PcNqGTwsXEhWqxwWpuVg98BVpXDwstDmjuW22QpjxygpKncqVypbyDpcugNKslxiwOK4DoNcyspcuVYM0brFyq/eXzvMGw8B665aUbBWz3w3Rixl9WoVYjQxtTpWMR9X32LKllWJ1OUVdyAzpzLAiYhUapUhW7lehHAphqHk206rU+2WutVOy2nnUyr2BMJSLaFLHS7FuMz3qmDeXxxccjmrWG2VL5EfjQmrmaLDckdWBzNM55q9sgp9PJaVKAhlqnABqkqXeIwqOQEypmoJVYMGS045hdBTZ7G3fEySUyxnmyZNi5Bpx+eCMz+SqEzVEhwKF4089Qk9V82rHEwUSuEDmWJWokynzbbBjmWFl0s2Io4zVstUZIVtOKuGdlS1HL1hVxW2aglWOSz0anmVSabEOP0f/xpSLiNStHjp4ER6FIK1prtSv46lTOa3nx5uWLUEIeNK+h0HpuaTwXoheWCZN2gsOR/v5S1Ohz/PuDKPUF4qBsOEzKLHmbneIrw0W8lgCU+kBZj0RxBMbieyFIGNJ0tcwMuUj0wxkgmXz0ZP/oZh9hLCOnwtBcCWvZTLybQI0OufBrky0pv5rqRWE8ISHh8FsZa8TCz0oKkisOYNQ02qRwjCK8jGmZcPk0yXcHCE5spIj5SUmtRiBFwYLM9LOaneJQjP8FyZt38mhuXbhCArX9E9Y2eLUc/hZz4gcT2m47p3P8uk3XPokYdP8ViZowNarjSbrvaCjzxAddXbcj2gw2Ln2t4JPjK4afu4jtfFlYW4fiHF69m6uHah4JO4MpTx4sC1FXzkCxIXJRYHHyEuzO7o2XhyuLZ6nQYXJInr5frqdRbkekngouz2sXDBh9UF15P1cZ0HuU4IXK/vuCCuTfVxQ3IPcW1In4jEtb6+CnNtyD4E9a/N2Lejca3vnJOF9scNOReeBh+5Gedo+Py1GXMHfF7lNKexckHney5zLTNXGuYi3ANI7/6i43qe3aYQniq7fQE9E39vIr3/oNWouPZ2KLSFB8vCc637lRWG61oUtT5dwWh0uovnOkO8Hr1DSpmPIuCy69y4zghcUPsSMPeYroeiCzbghXVByhfiPgd57yv9/UH0pNkNTlzP8eVKp+HYI+/JM9eaOJM+4oO1d5bFlws65biCvleQ3v0jzsUrYRdXBBtR8YK37veauCSdz5LcItiYvYd8y6HPSOla9Iuyh5G1RwgXahfytLwVLXvIMfqn+HSl09uYNy2MlN5DWFycvCCWCx2vpe+R5+0hADZm5TonNQmcjfPhQ7rWUFjAyRobFrF3obvEVEfezoMsllcwtmaxQ2j1qDu5hdy/60B7OAMbMmR/74oUesSd70IHJxmMh+xge4QN203XOenNxx9JVExghA3IKxdqz56rLhLL5YJNVsrYBblayCPhskZ6CBcI/wrtYo/YIdKoCc2vxiSsYKIW/WyxQ4480BXqiLOscWjBoofs3v0wLMxRYkmNYWjBInpZG35Kh3EhBiHoMaHR97wcUpLV+6Kuf/5CjldYujwNKJwEZOKwFv6sxsDWwcfUb/4lVmybvBhnsikK5pophtWs1veovNd+3cWT3UcfCKHH0Tg5ddPu1zBLoFEf2JquLV76H3ZNknZsn8Kb2OK/0+3BqNbwwTXqtRGolO7/dPrNFzRYFnErgVGfGsxDE+3JcDAajcfj0WjQH05sUdPhkus337IoMqrQT1WfRABz2QDcQhomBpr+aRsGg+9UCaKOWET875CX2StqF12NEUZwkH7zI9DJEFeERNFnP5I07auv+WOHDawG8VRM0z8vNYxd1M1SGBguv4zSv8+bfzb0GLFWsJtvUy93V8ISGlHaWBRpotcwIi7F5YrFkzEQsu9fdrPwX+NQaxQTmKjd/GDAAmBiTF7qdoQ2j9DYjgWM/Z6vPuQPpul99kurBvf0axoHLKAaXy91scaDSnA7Gb8Wq604saM1tvmQgaM3pxv3meoDkUPMNLHPsVgzsj5rL9M0mtkuump9nYEMWDjm9W1OUPW+tiKZrk+Yr42JZAMNO1hgKwXeMsENmvw0HtpRqgY+xWTAPe0ogVl6KOLnMV+hdM0exF+qherj/kTUg0O1DwoskslwtE6oqRpg3PfY3NIta/pPdj94QbBW1cfT2R9IdH9MJsP+IIEqodWo3yrBEt3pTrT6Hzp5BjPoPuBkAAAAAElFTkSuQmCC" alt="" style="width: 15px;position: relative;right: 10px;">Connect with Google</a></li>
+                
+<li> <a href=""><img src="https://www.google.com/imgres?q=facebook&imgurl=https%3A%2F%2Fimg.freepik.com%2Fpremium-vector%2Ffacebook-vector-social-media-icon_1073073-2139.jpg%3Fsemt%3Dais_incoming%26w%3D740%26q%3D80&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Ffacebook-logo&docid=QjV_LdxvQmmiHM&tbnid=eTCWnwsDV5CyPM&vet=12ahUKEwjgu_jnnr-TAxV_U2wGHfTLGV4QnPAOegQIHRAB..i&w=740&h=740&hcb=2&ved=2ahUKEwjgu_jnnr-TAxV_U2wGHfTLGV4QnPAOegQIHRAB" alt="" style="width: 15px;position: relative;right:10px;">Connect with Facebook</a></li>
+                
+<li><a href=""><img src="https://www.google.com/imgres?q=Twitter&imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fthumbnails%2F027%2F153%2F580%2Fsmall%2Ftwitter-logo-of-new-style-and-original-style-social-media-and-popular-news-with-people-connected-by-internet-global-networks-free-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Fvector-art%2F27153580-twitter-logo-of-new-style-and-original-style-social-media-and-popular-news-with-people-connected-by-internet-global-networks&docid=YIUT7zGy2yCY-M&tbnid=6vvSvd3oGAv8pM&vet=12ahUKEwjY4NGQoL-TAxUCTmwGHX0fE1MQnPAOegQIFhAB..i&w=525&h=350&hcb=2&ved=2ahUKEwjY4NGQoL-TAxUCTmwGHX0fE1MQnPAOegQIFhAB" alt="" style="width: 15px;position: relative;right: 10px;">Connect with Twitter</a></li>
+</div>
+</div>
+</div>
+</body>
+</html>

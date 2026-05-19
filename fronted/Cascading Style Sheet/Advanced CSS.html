@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 15: Advanced CSS</title>
+  <style>
+    /* Card with gradient, shadow, and hover effect */
+    .advanced-card {
+      width: 300px;
+      height: 180px;
+      background: linear-gradient(to right, #ff4e50, #f9d423);
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+      border-radius: 15px;
+      margin: 20px;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+    }
+    .advanced-card:hover {
+      transform: scale(1.05);
+      box-shadow: 8px 8px 20px rgba(0,0,0,0.5);
+    }
+
+    /* Circular image using clip-path */
+    .circle-img {
+width: 200px;
+height: 200px;
+background-image: url('https://via.placeholder.com/200');
+background-size: cover;
+background-position: center;
+clip-path: circle(50% at 50% 50%);
+margin: 20px;
+box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+/* Filter effect demo */
+.blur-box {
+width: 200px;
+height: 100px;
+background: lightblue;
+filter: blur(2px);
+margin: 20px;
+display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Chapter 15: Advanced CSS</h2>
+
+  <div class="advanced-card">Gradient Card</div>
+
+  <div class="circle-img"></div>
+
+  <div class="blur-box">Blurred Box</div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card - E-commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Card Container */
+        .card {
+            width: 280px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Image Container */
+        .card-img {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            background: #f5f5f5;
+        }
+
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Discount Badge */
+        .badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: linear-gradient(135deg, #ff4757 0%, #ff6348 100%);
+            color: white;
+            padding: 8px 12px;
+            font-size: 13px;
+            border-radius: 6px;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(255, 71, 87, 0.3);
+            z-index: 10;
+        }
+
+        /* Content */
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .rating {
+            color: #ffc107;
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+
+        .rating i {
+            margin-right: 2px;
+        }
+
+        /* Price Section */
+        .price-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            color: #ff4757;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .original-price {
+            color: #999;
+            font-size: 14px;
+            text-decoration: line-through;
+        }
+
+        .discount-text {
+            color: #ff4757;
+            font-size: 12px;
+            background: #fff5f5;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+justify-content: center;
+ gap: 8px;
+}
+
+button:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+button:active {
+transform: scale(0.98);
+}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="card-img">
+<span class="badge">-30%</span>
+<img src="../Images/7.jpg" alt="Premium Product">
+</div>
+<div class="card-content">
+<h3>Premium Product</h3>
+<div class="rating">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+ 4.5 (120 reviews)
+</div>
+<div class="price-section">
+<span class="price">$69.99</span>
+<span class="original-price">$99.99</span>
+<span class="discount-text">30% OFF</span>
+</div>
+<button>
+<i class="fas fa-shopping-cart"></i> Buy Now
+</button>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login and Registration form with HTML5 and CSS3</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body{
+    font-family: "Arial";
+    background: #e6eef2;
+}
+.container{
+    width: 400px;
+    background:aliceblue;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* ... rest of your container styles ... */
+}
+h2{
+    text-align: center;
+    color:#0f3f40;
+    font-family: Bebas Neue;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, transparent, #0f3f40 30%, #0f3f40 70%, transparent);
+    background-size: 100% 2px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+label{
+    display: block;
+    margin: 15px;
+    font-size: 14px;;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button{
+    width: 50%;
+    padding: 10px;
+    background: #2c7a7b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background: #225e5f;
+}
+.Login{
+    text-align: center;
+    margin-top: 15px;
+}
+.login{
+    color: #2c7a7b;
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    color: #2c7a7b;
+    margin-bottom: 10px;
+}
+.subtitle{
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+</style>
+</head>
+<body>
+<h1>LOGIN AND REGISTRATION FORM WITH HTML5 AND CSS3</h1>
+<p class="subtitle">Click <b>"Join us"</b> to see the form switch</p>
+<div class="container">
+<h2>SIGN UP</h2>
+<form>
+<label>Your username</label>
+<input type="text" placeholder="mysuperusername690">
+<label>Your email</label>
+<input type="email" placeholder="mysupermail@.mail.com">
+<label>Your password</label>
+<input type="password" placeholder="eg. X8df!90EO">
+<label>Please confirm your password</label>
+<input type="password" placeholder="eg. X8df!90EO">
+<button type="submit">SIGN UP</button>
+</form>
+<p class="Login">Already a member? <a href="#">Go and log in</a></p>
+</div>
+</body>
+</html>

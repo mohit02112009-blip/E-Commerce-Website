@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drop Down Button Create..</title>
+<style>
+    .body{
+       background-color: #3498db;
+       color: white;
+       padding: 12px;
+       font-size: 16px;
+       border: none;
+       cursor: pointer;
+    }
+    .menu{
+        position: absolute;
+        margin: 50px;
+        width: 100%;
+       height: 5px;
+        background-color: black;
+    } 
+
+    ol{
+        position: absolute;
+        margin: 50px;
+        padding: 0px;
+        list-style: none;
+    }
+    ol li{
+        float: right;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    ol li a{
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+    .shop{
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        background-color: white;
+        transition: 1.5s;
+    }
+    ol li:hover .shop{
+        height: 150px;
+    }
+    .h1{
+        font-size: larger;
+        position: absolute;
+        margin: 50px;
+        font-size: 30px;
+        font-family: monospace;
+        font-weight: bolder;  
+       }
+
+</style>
+</head>
+<body>
+<div class="menu"></div>
+<h1>Logo</h1>
+<ol>
+<li><a href="">Home</a></li>
+<li><a href="">Shop</a></li> 
+<div class =shop></div>
+<ul>
+<li><a href="">Men's Cloths</a></li>
+<li><a href="">Kids' Cloths</a></li>
+<li><a href="">Dry Cleaning</a></li>
+</ul>
+<li><a href="">Blog</a></li>
+<li><a href="">About</a></li> 
+</ol>  ,
+</body>
+</html>

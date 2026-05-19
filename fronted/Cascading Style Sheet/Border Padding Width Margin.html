@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box Practice</title>
+<style>
+  /* Common styles */
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .box {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* Box 1: content-box */
+  .box1 {
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #3498db;
+    width: 150px;
+    box-sizing: content-box; /* default */
+  }
+
+  /* Box 2: border-box */
+  .box2 {
+    padding: 10px;
+    margin: 20px;
+    border: 5px solid #e74c3c;
+    width: 150px;
+    box-sizing: border-box;
+  }
+
+  /* Box 3: content-box */
+  .box3 {
+    padding: 30px;
+    margin: 5px;
+    border: 1px solid #2ecc71;
+    width: 150px;
+    box-sizing: content-box;
+  }
+
+  /* Centered box */
+  .center-box {
+    width: 200px;
+    padding: 20px;
+    margin: 0 auto; /* centers horizontally */
+    border: 3px solid #9b59b6;
+    text-align: center;
+  }
+
+  /* Responsive card */
+  .card {
+    max-width: 400px;
+    margin: 20px auto; /* center horizontally */
+    padding: 20px;
+    border: 2px solid #34495e;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+  }
+
+  @media (max-width: 500px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h2>Boxes Side by Side</h2>
+<div class="container">
+  <div class="box box1">Box 1</div>
+  <div class="box box2">Box 2</div>
+  <div class="box box3">Box 3</div>
+</div>
+
+<h2>Centered Box</h2>
+<div class="center-box">I am centered</div>
+
+<h2>Responsive Card</h2>
+<div class="card">
+<h3>Card Title</h3>
+<p>This is a responsive card. It has padding inside and margin outside. 
+Resize the browser to see it stay centered and responsive.</p>
+</div>
+
+</body>
+</html>

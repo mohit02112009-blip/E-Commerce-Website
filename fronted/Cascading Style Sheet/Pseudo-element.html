@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <title>Chapter 10: CSS Grid</title>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 150px);
+      gap: 10px;
+    }
+    .gallery div {
+      background: lightcoral;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+    .gallery .big {
+      grid-column: span 2;
+      grid-row: span 2;
+      background: lightseagreen;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Grid</h2>
+  <div class="gallery">
+    <div>1</div>
+    <div>2</div>
+    <div class="big">Big Item</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+  </div>
+</body>
+</html>

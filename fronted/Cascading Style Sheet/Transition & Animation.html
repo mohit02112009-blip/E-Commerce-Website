@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 12: Transitions & Animations</title>
+  <style>
+    .anim-btn {
+      padding: 10px 20px;
+      background: crimson;
+      color: white;
+      transition: all 0.5s ease;
+    }
+    .anim-btn:hover {
+      transform: scale(1.2);
+      background: darkred;
+    }
+    @keyframes slide {
+      from { left: 0; }
+      to { left: 200px; }
+    }
+    .slide-box {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background: skyblue;
+      animation: slide 3s infinite alternate;
+    }
+  </style>
+</head>
+<body>
+  <h2>Transitions & Animations</h2>
+  <button class="anim-btn">Animated Button</button>
+  <div class="slide-box"></div>
+</body>
+</html>

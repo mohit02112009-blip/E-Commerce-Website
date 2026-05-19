@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 14: CSS Variables</title>
+  <style>
+    :root {
+      --main-bg: #3498db;
+      --main-text: #fff;
+    }
+    .theme-box {
+      background: var(--main-bg);
+      color: var(--main-text);
+      padding: 20px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Variables</h2>
+  <div class="theme-box">This box uses CSS variables</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 8: Positioning</title>
+  <style>
+    .fixed-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      z-index: 10;
+    }
+    .overlap1 {
+      position: absolute;
+      top: 100px;
+      left: 50px;
+      width: 150px;
+      height: 150px;
+      background: orange;
+      z-index: 1;
+    }
+    .overlap2 {
+      position: absolute;
+      top: 130px;
+      left: 80px;
+      width: 150px;
+      height: 150px;
+      background: purple;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="fixed-header">Fixed Header (Scroll down)</div>
+  <h2>Positioning</h2>
+  <div class="overlap1">Box 1</div>
+  <div class="overlap2">Box 2 (on top)</div>
+</body>
+</html>

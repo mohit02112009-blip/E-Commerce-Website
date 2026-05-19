@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 13: Responsive Design</title>
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      background: #444;
+      color: white;
+      padding: 10px;
+    }
+    @media screen and (max-width: 768px) {
+      .navbar { flex-direction: column; }
+      body { background-color: lightgreen; }
+    }
+  </style>
+</head>
+<body>
+  <h2>Responsive Design</h2>
+  <div class="navbar">
+    <div>Home</div>
+    <div>About</div>
+    <div>Contact</div>
+  </div>
+  <p>Resize the browser to see the navbar stack and background change.</p>
+</body>
+</html>
